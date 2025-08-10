@@ -1,0 +1,24 @@
+# MT7921U Driver Dependency Tree
+# Device ID: 0e8d:7961 (MediaTek MT7921U)
+
+# Dependencies for mt76-connac-lib:
+depends:        mt76,mac80211,cfg80211
+
+# Dependencies for mt76:
+depends:        mac80211,cfg80211
+
+# Dependencies for mt76-usb:
+depends:        mt76
+
+# Dependencies for mt7921-common:
+depends:        mt76-connac-lib,mac80211,mt792x-lib,mt76,cfg80211
+
+# Dependencies for mt7921u:
+depends:        mt76-usb,mt792x-usb,mt7921-common,mt76,mt76-connac-lib,mt792x-lib
+
+# Dependencies for mt792x-lib:
+depends:        mt76,mt76-connac-lib,mac80211
+
+# Dependencies for mt792x-usb:
+depends:        mt792x-lib,mt76-usb,mt76
+
